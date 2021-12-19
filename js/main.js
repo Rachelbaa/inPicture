@@ -38,7 +38,7 @@ function createElQuests() {
     console.log(gQuests[gCurrQuestIdx].opts.length, ' length of options');
     var strHTML = '';
     strHTML += `<div>
-        <img class="img${gQuests[gCurrQuestIdx].id}" src="/img/${gQuests[gCurrQuestIdx].id}.jpg">
+        <img class="img${gQuests[gCurrQuestIdx].id}" src="./img/${gQuests[gCurrQuestIdx].id}.jpg">
             <h4 style="font-family: verdana">Pick the sentence that describes the picture:</h4>`
     for (var i = 0; i < gQuests[gCurrQuestIdx].opts.length; i++) {
         strHTML += `<button onclick="clickedA(this, ${i})"> ${gQuests[gCurrQuestIdx].opts[i]}</button> <br><br>`
